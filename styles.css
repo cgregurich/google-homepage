@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Global styling */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+}
+
+
+/*  Local styling */
+
+#nav-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+#nav-links a {
+  margin: 0px 10px;
+  padding: 0px 5px;
+}
+
+#nav-links .left-links {
+  font-size: 14px;
+}
+
+#nav-links .right-links {
+  color: #212121;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.left-links, .right-links {
+  display: flex;
+}
+
+.left-links a:hover, .right-links a:hover {
+  text-decoration: underline;
+}
+
+#apps-icon {
+  border-radius: 100%;
+  text-decoration: none;
+}
+
+#apps-icon:hover {
+  box-shadow: 0px 0px 0px 10px #f0f0f0;
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+#user-img {
+  border-radius: 100%;
+}
+
+#user-img:hover {
+  box-shadow: 0px 0px 0px 5px #f0f0f0;
+}
+
+#apps-icon-anchor {
+ width: 100%;
+ display: flex;
+ text-decoration: none;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 85px;
+  width: 100%;
+}
+
+.fa-search {
+  font-size: 14px;
+  color: #9AA0A6;
+  position: absolute;
+  margin-left: 15px;
+}
+
+.fa-microphone {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  padding: 5px;
+  color: black;
+  transition: color 1s;
+}
+
+.fa-microphone::after {
+  opacity: 0;
+  content: "";
+}
+
+.fa-microphone:hover::after{
+  content: "Search by voice";
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 7px 10px;
+  position: absolute;
+  top: 45px;
+  left: -100%;
+  white-space: nowrap;
+  transition: opacity 0s linear 0.2s;
+}
+
+#search-bar {
+  margin: 20px auto;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search-bar input {
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  padding: 15px;
+  border: 1px #dfe1e5 solid;
+  padding-left: 50px;
+  transition: box-shadow 0.5s;
+}
+
+#search-bar input:hover, #search-bar input:focus {
+  box-shadow: 1px 1px 5px #9AA0A6;
+  transition: box-shadow 0.3s;
+}
+
+#search-buttons {
+  display: flex;
+  margin: auto;
+  
+}
+
+#search-buttons button {
+  background-color: #f8f9fa;
+  border: none;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-buttons button:hover {
+  box-shadow: 0px 0px 0px 1px #d8d8d8;
+}
+
+#search-buttons button:active {
+  box-shadow: 0px 0px 0px 1px #4D90FE;
+}
+
+footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  
+  width: 100%;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #70758D;
+  width: 100%;
+}
+
+#footer-links .left-links a {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+#footer-links .right-links a {
+  display: flex;;
+  align-items: center;
+  margin: 20px;
+}
+
+
+
+
